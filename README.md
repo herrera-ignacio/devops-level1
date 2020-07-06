@@ -8,8 +8,10 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 
 * DevOps: what and why
 * Cloud: what and why
-* Intro to AWS Console
-* Intro to AWS CLI
+* Developing with AWS
+	* AWS Console
+	* AWS CLI
+	* AWS SDK
 * Configuring your IAM Credentials
 * Least Privilege Principle
 * Core services for web development
