@@ -4,7 +4,7 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 
 ## Schedule
 
-### Day 1 (08/07/2020): Intro to Cloud & AWS
+### [Day 1 (08/07/2020): Intro to Cloud & AWS](./day1)
 
 * DevOps: what and why
 * Cloud: what and why
