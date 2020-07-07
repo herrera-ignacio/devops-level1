@@ -18,3 +18,9 @@ Let's create IAM users:
 3. Give Programatic and Console Access
 4. Set Permissions, attach existing policy Administrator
 5. Login using account-id/alis with new IAM user
+
+## Developing with AWS
+
+* Console
+* SDK
+* CLI

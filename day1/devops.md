@@ -39,7 +39,7 @@ DevOps is a mix of patterns intended to __improve collaboration__ between Develo
 
 Measuring what you are doing is a crucial aspect of software engineering. Sooner or later, you'll have to decide on which metrics you want to use during your software engineering process, consider which metric is meaningful enough to aid all participants, as well as the Development and delivery processes.
 
-Both traditional and agile prjects often emphasize the importance of measurement because you can only improve if you measure.
+Both traditional and agile projects often emphasize the importance of measurement because you can only improve if you measure.
 
 * Traditional projects emphasize measurement as an important tool for tracking progress, identifying the current status and scheduling dates.
 * Agile projects settins try to find different approaches to create measurements, but often find themselves on dead-end streets when trying to bridge Operations to Development.
@@ -63,7 +63,7 @@ After a release, involing a team spending a weekend in a data center deploying t
 
 * The process of __fixing incidents will also become optimized__, as changes between deployments are small, and in turn helps with learning about the root causes of production incidents. __Errors can be fixed faster__, and that makes a total rollback unnecesary, but even if you have to roollback, you only need to do so over a small set of changes.
 
-* It is not only a technical improvement, but also a more managable situation from a business viewpoint, to rollback a single feature than a full release with hundreds of features.
+* It is not only a technical improvement, but also a more manageable situation from a business viewpoint, to rollback a single feature than a full release with hundreds of features.
 
 #### Automation
 
@@ -99,7 +99,7 @@ After a release, involing a team spending a weekend in a data center deploying t
 	* Quality and QA is responsibility of the whole team
 	* Everyone helps programmers understand what to code
 	* Project roles instead of separated teams
-* Operations often acts or gets tracted as a silo
+* Operations often acts or gets treated as a silo
 	* Tasked with deliverables from development to make software available to users
 	* Often receives non-functional requirement after development that may conflict with shipped software
 * Blame game (conflicts during/after deployment, conflicts about performance, etc)
