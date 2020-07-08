@@ -35,7 +35,7 @@ Each region has __availability zones__ which are a physical data center in the r
 __All services are region scoped except__:
 
 * IAM
-* S3
+* S3 (names, but bucket location is region-specific)
 * Route53
 
 ## IAM
