@@ -20,16 +20,6 @@
 
 ![devsecops](https://www.viva64.com/media/docx/blog/0710_DevOps_vs_DevSecOps/image1_thm_intoblank_1200x630.png)
 
-### What is not DevOps
-
-* Operations experts taking over Development
-* Developers taking over Operations
-* Not a new department or role profile
-* No one-size-fits-all solution
-* No new tools
-
-![not devops](https://www.scnsoft.com/blog-pictures/itsm/how-can-a-system-administrator-turn-into-a-devops-engineer.png)
-
 ### Why DevOps
 
 * Conflict
@@ -44,13 +34,23 @@
 * Focus on harder problems
 * Holistic delivery process, faster and better
 
+### What is not DevOps
+
+* Operations experts taking over Development
+* Developers taking over Operations
+* Not a new department or role profile
+* No one-size-fits-all solution
+* No new tools
+
+![not devops](https://www.scnsoft.com/blog-pictures/itsm/how-can-a-system-administrator-turn-into-a-devops-engineer.png)
+
 ### Team Settings
 
 #### Traditional
 
 * Hero cult
 * Emphasis on titles
-* Shaodw responsibilities
+* Shadow responsibilities
 * Favor a plan over planning
 * Operations accompanies and accounts for 'the last mile'
 * Cultural barriers
