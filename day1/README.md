@@ -1,10 +1,9 @@
-# Day 1: Intro to Cloud & AWS
+# Day 1: Intro to DevOps and Cloud
 
 * [Intro to DevOps](./devops.md)
 * [Intro to Cloud](./cloud.md)
 * [Break, questions, next steps](./break.md)
-* [AWS: Account creation and credentials](./aws1.md)
-* [AWS: Services intro](./aws-services.md)
+
 
 ## Intro to DevOps
 

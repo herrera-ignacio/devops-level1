@@ -4,10 +4,14 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 
 ## Schedule
 
-### [Day 1 (08/07/2020): Intro to Cloud & AWS](./day1)
+### [Day 1 (08/07/2020): Intro to DevOps and Cloud](./day1)
 
 * DevOps: what and why
 * Cloud: what and why
+
+
+### Day 2 (15/07/2020): Intro to AWS and Static website hosting
+
 * Developing with AWS
 	* AWS Console
 	* AWS CLI
@@ -16,9 +20,6 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * Least Privilege Principle
 * Core services for web development
 * Regions & Availability Zones
-
-### Day 2 (15/07/2020): Static website hosting
-
 * Hosting static website, [Reference](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html)
 * S3 (http only), Route53 Alias Records, CloudFront (https and cdn)
 * Uploading new files, fetching REST API, error pages
