@@ -2,4 +2,4 @@
 
 * [AWS: Account creation and credentials](./aws1.md)
 * [AWS: Developing](./developing.md)
- 
+* [Hosting static website](./website-hosting.md) 
