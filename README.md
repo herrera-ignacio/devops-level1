@@ -9,7 +9,7 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * DevOps: what and why
 * Cloud: what and why
 
-### Day 2 (15/07/2020): Intro to AWS and Static website hosting
+### [Day 2 (15/07/2020): Intro to AWS and Static website hosting](./day2)
 
 * Developing with AWS
 	* AWS Console
@@ -24,14 +24,15 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * S3 (http only), Route53 Alias Records, CloudFront (https and cdn)
 * Uploading new files, fetching REST API, error pages
 * Services in detail, logging, redirects (www), routing policies, geo restrictions, etc
+* Reasoning about CI/CD.
 
 ### Day 3 (22/07/2020): Deploying services
 
 * EC2, Security Groups, SSH into instances
 * AMIs and User Data shell scripts
-* Cloudwatch
+* CloudWatch
 * Storage types: EBS, Instance, S3, RDS, 
-* Feel the lack of CI/CD, explain pros and cons.
+* Reasoning about CI/CD and more complex services.
 * Autoscaling groups, EBS as storage (different types of storage)
 
 ### Day 4 (29/07/2020): Deploying services part 2
