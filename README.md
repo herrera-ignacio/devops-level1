@@ -20,7 +20,6 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * Core services for web development
 * Regions & Availability Zones
 * Hosting static website, [Reference](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html)
-	* [Example](https://medium.com/dailyjs/a-guide-to-deploying-your-react-app-with-aws-s3-including-https-a-custom-domain-a-cdn-and-58245251f081)
 * S3 (http only), Route53 Alias Records, CloudFront (https and cdn)
 * Uploading new files, fetching REST API, error pages
 * Services in detail, logging, redirects (www), routing policies, geo restrictions, etc

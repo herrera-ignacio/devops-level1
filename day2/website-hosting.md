@@ -50,6 +50,30 @@ Now if you navigate to your provided endpoint url, e.g. http://super-website.s3-
 
 If we want to access our website through https, we need to set up our CDN that will work as a 'proxy' (well not really).
 
+### Quick word about S3
+
+* Versioning
+    * Rollback
+* Security concerns
+    * User based (IAM)
+    * Resource based (Bucket policies, Object Access Control List)
+    * Encryption in flight
+        * Server side (SSE-S3 & SSE-KMS)
+        * SSE-C (Client side)
+    * Logging and Audit (requires another bucket)
+        * Amazon Athena
+    * Pre-signed URLS (expiration time, default 3600 seconds) for upload/download.
+    * MFA for deleting
+    * CORS (important if you have for example assets in other bucket, or to limit requests)
+* Performance
+    * Cloudfront to distribute and cache around the world
+    * Encryption limits
+    * Multipart upload
+* Storage classes
+    * Based on access
+    * Transition between classes -> Lifecycle rules (can schedule delete)
+* Event Notifications -> Lambda
+
 ## Setting up Route 53, DNS
 
 ### Domain name
@@ -67,16 +91,23 @@ A hosted zone is a __container for records__, and records contain information ab
 
 We can create an ALIAS record to route our domain to another domain, in this case the bucket endpoint. We'll get back to this later.
 
+### Quick chat on DNS
+
+For more info, check my other repo: [Ignacio Herrera, TCP/IP protocol suite](https://github.com/herrera-ignacio/tcp-ip)
+
 ## Certificate Manager: set up HTTPS
 
 For HTTPS to work, we need a TLS certificate.
 
 * Certificate Manager (North Virginia) -> Request a certificate -> public -> add domain details (with and without www) -> DNS Validation
 
-### Note on how HTTPS work
+### Quick chat on how TLS (HTTPS) work
 
 * Asymmetric encryption (public/private key)
+* MAC (!= MAC address)
 * Certificate of authority
+
+For more information, check my other repo: [Ignacio Herrera, Cybersecurity Guidelines](https://github.com/herrera-ignacio/cybersecurity_guidelines)
 
 ## Cloudfront: distribute globally
 
@@ -86,10 +117,34 @@ For HTTPS to work, we need a TLS certificate.
 
 It can take about 30 minutes to spin up.
 
+### Quick chat on capabilities
+
+* Origins -> AWS Resources, even ALB.
+* Behaviors
+* Error Pages/Responses
+* Restrictions
+* Invalidations
+* Tags 
+* Signed URL/Cookies (!= S3 Pre-Signed URL)
+
 ## Finish DNS Set up
 
 * Route 53 -> Hosted zone -> Create Record Set -> point Alias records to CDN, which in turn, will point to your S3 bucket.
 * Navigate to https://domain
+
+### Quick chat on Route53
+
+* Health Checks (HTTP/HTTPS/TCP)
+    * Availability
+    * Performance
+* Monitoring, alarms
+* DNS Failover (respond DNS queries using only health resources)
+* Traffic policies -> Policy records (vs Routing Policy)
+    * Failover
+    * Weighted records
+    * Geolocation
+    * Multiple criteria (latency + weighted + health, etc)
+
 
 ## Code purging
 
@@ -97,6 +152,7 @@ On each code push, we want caches to be purged on your CDN.
 
 * [Invalidate from edge caches](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html).
 * Use file versioning.
+
 
 ## Quick words on CI/CD
 
