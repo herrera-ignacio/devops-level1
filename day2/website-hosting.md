@@ -1,5 +1,7 @@
 # Static Website Hosting
 
+![have this you must](https://i1.wp.com/www.onefootinthecave.net/wp-content/uploads/2015/08/must-have.jpg)
+
 ## Overview
 
 We'll use the following services:
@@ -10,6 +12,8 @@ We'll use the following services:
 * __Certificate Manager__ for providing TLS certificates (HTTPS).
 
 ## Setting up S3, web hosting
+
+![s3](https://media.makeameme.org/created/aws-s3.jpg)
 
 * Create bucket
 	* Configure options -> Uncheck block off public access
@@ -74,7 +78,11 @@ If we want to access our website through https, we need to set up our CDN that w
     * Transition between classes -> Lifecycle rules (can schedule delete)
 * Event Notifications -> Lambda
 
+![s3](https://memegenerator.net/img/instances/71730919.jpg)
+
 ## Setting up Route 53, DNS
+
+![dns](https://memegenerator.net/img/instances/72589866.jpg)
 
 ### Domain name
 
@@ -97,6 +105,8 @@ For more info, check my other repo: [Ignacio Herrera, TCP/IP protocol suite](htt
 
 ## Certificate Manager: set up HTTPS
 
+![https](https://media.makeameme.org/created/https-https.jpg)
+
 For HTTPS to work, we need a TLS certificate.
 
 * Certificate Manager (North Virginia) -> Request a certificate -> public -> add domain details (with and without www) -> DNS Validation
@@ -110,6 +120,8 @@ For HTTPS to work, we need a TLS certificate.
 For more information, check my other repo: [Ignacio Herrera, Cybersecurity Guidelines](https://github.com/herrera-ignacio/cybersecurity_guidelines)
 
 ## Cloudfront: distribute globally
+
+![cloudfront](https://miro.medium.com/max/1302/0*ljKpV3Y_BvTXo4Kf.jpg)
 
 * CloudFront -> Create Distribution-> Web
 * Origin Domain Name -> S3 bucket endpoint
@@ -145,14 +157,14 @@ It can take about 30 minutes to spin up.
     * Geolocation
     * Multiple criteria (latency + weighted + health, etc)
 
-
 ## Code purging
 
 On each code push, we want caches to be purged on your CDN.
 
+![dns](https://platypusplatypus.com/wp-content/uploads/what-is-dns.png)
+
 * [Invalidate from edge caches](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html).
 * Use file versioning.
-
 
 ## Quick words on CI/CD
 
@@ -170,3 +182,5 @@ How do you think we could progresivelly automate this?
 * Create a Jenkins server that has aws-shell installed and can run script on every push to repo.
 * Gitlab CI/CD & Gitlab Runners
 	* [Mine'd example, boto3 Python SDK and docker](https://git.amalgama.co/mined/mined-server/-/blob/master/.gitlab-ci.yml)
+
+![devops](https://www.metaltoad.com/sites/default/files/inline-images/22605665.jpg)
