@@ -156,6 +156,8 @@ On each code push, we want caches to be purged on your CDN.
 
 ## Quick words on CI/CD
 
+![cicd](https://miro.medium.com/max/2484/0*tpKI_meIRGMbBllI.jpg)
+
 Doing all these manually every time we want to make a deployment seems really inefficient (a.k.a, a pain in the butt).
 
 How do you think we could progresivelly automate this?

@@ -1,6 +1,10 @@
 # AWS Developing
 
+![devops](https://pics.me.me/devopsist-for-developers-change-my-mind-imgfip-com-what-actually-is-31479622.png)
+
 ## CLI
+
+![cli meme](https://pics.conservativememes.com/gui-vs-cli-72375152.png)
 
 Unified tool to manage multiple AWS services from the command line and automate them through scripts.
 
@@ -30,6 +34,8 @@ s3 ls
 ```
 
 ## SDK
+
+![sdk thank you](https://staffino.com/blog/wp-content/uploads/2016/09/59349318.jpg)
 
 * [Node SDK](https://github.com/aws/aws-sdk-js)
 
