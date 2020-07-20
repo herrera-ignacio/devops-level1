@@ -29,10 +29,10 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 
 * EC2, Security Groups, SSH into instances
 * AMIs and User Data shell scripts
-* CloudWatch
 * Storage types: EBS, Instance, S3, RDS, 
+* CloudWatch
 * Reasoning about CI/CD and more complex services.
-* Autoscaling groups, EBS as storage (different types of storage)
+* Autoscaling groups
 
 ### Day 4 (29/07/2020): Deploying services part 2
 
