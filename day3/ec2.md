@@ -21,7 +21,7 @@ First, we only have some basic HTTP Routing to process GET requests.
 
 Instance types are optimized to fit different use cases, varying combinations of CPU, memory, storate, and networking capacity, for the flexibility to choose the appropriate mix of resources for your application.
 
-![Let's read the docs!](https://aws.amazon.com/ec2/instance-types/)
+[Let's read the docs!](https://aws.amazon.com/ec2/instance-types/)
 
 ### Further Configuration
 
