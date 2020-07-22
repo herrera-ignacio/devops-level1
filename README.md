@@ -25,18 +25,16 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * Services in detail, logging, redirects (www), routing policies, geo restrictions, etc
 * Reasoning about CI/CD.
 
-### Day 3 (22/07/2020): Deploying services
+### [Day 3 (22/07/2020): Deploying services](./day3)
 
 * EC2, Security Groups, SSH into instances
 * AMIs and User Data shell scripts
 * Storage types: EBS, Instance, S3, RDS, 
 * CloudWatch
 * Reasoning about CI/CD and more complex services.
-* Autoscaling groups
 
 ### Day 4 (29/07/2020): Deploying services part 2
 
-The plan is to continue with Day 3 topics, if enough time introduce some of the following:
-
+* Autoscaling groups
+* Docker is our friend
 * Elastic Beanstalk and ECS
-* Why use containers (docker)?

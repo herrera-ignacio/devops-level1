@@ -4,6 +4,3 @@
 
 * [Running cloud servers!](./ec2.md)
 * [Data Persistence](./persistence.md)
-* [First approach to scaling](./scaling.md)
-* Quick talk about CI/CD
-* CloudWatch

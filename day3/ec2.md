@@ -30,7 +30,7 @@ Instance types are optimized to fit different use cases, varying combinations of
 	4. S3: any amount of data at any time, from within EC2 or anywhere on the web.
 
 
-#### User Data Example
+### User Data Example
 
 Create a configure a LAMP server with a bash cript.
 
@@ -71,6 +71,10 @@ runcmd:
  - [ find, /var/www, -type, f, -exec, chmod, 0664, {}, \; ]
  - [ sh, -c, 'echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php' ]
 ```
+
+### AMIs
+
+Right click instance -> Create Image :)
 
 ## Deploying our application manually
 
