@@ -1,23 +1,31 @@
 # Running Cloud Servers
 
+![cloud servcers](https://i.pinimg.com/236x/ec/e9/e5/ece9e5ab8500e8e3a5601a95c7d5d7f2--cloudcomputing-heavens.jpg)
+
 First we need something to run. We'll use a demo http api with Node.js, and we'll start building on top of that.
 
 First, we only have some basic HTTP Routing to process GET requests.
 
-* [Code]()
+* [Code](https://github.com/herrera-ignacio/code-example)
 
 ## Creating the servers
+
+![wizard cloud](https://smidcloud.com/wp-content/uploads/2018/01/4-300x300.jpg)
 
 * EC2 -> Launch Instance -> AMIs
 * Different AMIs options, we'll go with Quick Start for now
 
 ### Quick chat about Instance Types
 
+![cloud scientific](https://i.pinimg.com/236x/64/08/32/64083250e48223e94387ee3ba45c09c6.jpg)
+
 Instance types are optimized to fit different use cases, varying combinations of CPU, memory, storate, and networking capacity, for the flexibility to choose the appropriate mix of resources for your application.
 
 ![Let's read the docs!](https://aws.amazon.com/ec2/instance-types/)
 
 ### Further Configuration
+
+![aws bill comming](https://miro.medium.com/max/1244/0*u5gUyhB0YFd3VzWM.jpg)
 
 * Burstable instances (T)
 * Spot instances, great for development!
@@ -31,6 +39,8 @@ Instance types are optimized to fit different use cases, varying combinations of
 
 
 ### User Data Example
+
+![no idea](https://wpctrl.b-cdn.net/wp-content/uploads/2020/01/dog-hosting-meme.jpg)
 
 Create a configure a LAMP server with a bash cript.
 
@@ -74,9 +84,13 @@ runcmd:
 
 ### AMIs
 
+![dr](https://www.aspiretech.com/images/easyblog_shared/October_2016/10-7-16/ib_meme_4.jpg)
+
 Right click instance -> Create Image :)
 
 ## Deploying our application manually
+
+![delivery](https://hackernoon.com/hn-images/1*8wcrKrzgaEJwNKam8LCYCw.jpeg)
 
 1. SSH into instance
 2. We need to install lots of things...
@@ -107,7 +121,10 @@ git clone https://github.com/herrera-ignacio/code-example.git
 4. Run the server :)
 
 ```
+npm install
 npm run dev
 ```
 
 5. Go to Instances -> Instance Description -> Public DNS (IPv4)
+
+![git push](https://hackernoon.com/hn-images/1*GwoUrficuzqGSxXD-gztEQ.jpeg)
