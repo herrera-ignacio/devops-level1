@@ -38,7 +38,6 @@ Amazon EC2 Auto Scaling creates a launch configuration for you and associates it
 * ASG includes block device mapping from the AMI used to launch the instance, but it does not include any block devices attached after instance launch.
 * If identified instance is registered with one or more load balancers, the information about load balancer is not copied to the load balancer or target group attribute of the new ASG.
 
-
 ### Hands on
 
 EC2 Instance -> ASG from running EC2 instances -> add instance to new ASG.
