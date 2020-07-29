@@ -38,3 +38,4 @@ This is the material and guideline used for my lecture on 'DevOps and AWS Fundam
 * Docker is our friend
 * CloudWatch
 * Elastic Beanstalk and ECS
+* Conclusion

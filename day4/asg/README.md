@@ -1,5 +1,7 @@
 # ASG: Auto Scaling Groups
 
+![ASG](https://media.giphy.com/media/12BYUePgtn7sis/giphy.gif)
+
 ## Multiple Ways
 
 * From Launch Template
@@ -23,12 +25,16 @@
 
 ### Launch Template vs Launch Configuration
 
+![coding](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
+
 Launch templates are
 
 * Versioned
 * Integrated with more services, such as EC2, AWS SDK, and CLI.
 
 ## Using an EC2
+
+![ec2](https://media.giphy.com/media/NiU9MQUOSaOPe/giphy.gif)
 
 Amazon EC2 Auto Scaling creates a launch configuration for you and associates it wih the Auto Scaling group. It derives its attributes from the specified instances, such as AMI ID, instance type, and availability zone.
 
@@ -40,6 +46,7 @@ Amazon EC2 Auto Scaling creates a launch configuration for you and associates it
 
 ### Hands on
 
+
 EC2 Instance -> ASG from running EC2 instances -> add instance to new ASG.
 	* Instance -> Actions -> Instance Settings -> Attach to ASG (New)
 	* (OPTIONAL) Auto Scaling -> ASG -> Edit
@@ -49,6 +56,8 @@ You can attach new instances to the ASG:
 * Instance -> Actions -> Instance Settings -> Attach to ASG -> existing ASG
 
 ## Must know
+
+![hands on](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
 ### ELB: Elastic Load Balancing
 

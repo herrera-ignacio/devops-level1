@@ -1,5 +1,7 @@
 # Day 4
 
+![here we go again](https://media.giphy.com/media/Q5iH2LKHcZr6UXDHuy/giphy.gif)
+
 Scaling our services and making them reliable.
 
 * [ASG: Auto Scaling Groups](./asg)

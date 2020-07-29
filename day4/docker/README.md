@@ -1,5 +1,7 @@
 # Docker
 
+![docker](https://media.giphy.com/media/gG6OcTSRWaSis/giphy.gif)
+
 * Single predictable dependencies (only docker).
 * Safer environment variables with ECS/Elastic Beanstalk (no files going back and forward).
 * Easy application management.
@@ -14,6 +16,8 @@
 
 ## Configuration
 
+![config](https://media.giphy.com/media/jljJ9majewZ8C7LD56/giphy.gif)
+
 Always check [latest aws (or favorite provider) documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
 
 It would usually just be:
@@ -27,6 +31,8 @@ docker info // verify
 ```
 
 ## No need for lots of changes...
+
+![gif](https://media.giphy.com/media/13UZisxBxkjPwI/giphy.gif)
 
 From the development aspect, there's not that many changes to 'dockerize' a project. Just a set a `Dockerfile` in place, or `docker-compose.yml` if needed.
 
@@ -53,6 +59,8 @@ CMD ["npm", "run", "prod:start"]
 ```
 
 ### Local Database
+
+![gif](https://media.giphy.com/media/sSmxfWnEVxtWU/giphy.gif)
 
 ```yaml
 version: "3"
