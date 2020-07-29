@@ -20,6 +20,8 @@ EB is an abstraciton layer on top of ECS, with some bootstrapped features and so
 * Automatically interacts with ECS and ELB
 * Cluster health and metrics are readily available
 * Load balancer must terminate HTTPS and all backend connections are HTTP
+	* [Docs](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https.html)
+	* You can configure end-to-end HTTPS, combining instance and load balancer termination to encrypt both connections, configuring a proxy server that runs on the instance to terminate HTTPS (you'll need configuration services to modify the software running on the instances)
 * Easily adjustable autoscaling
 * Manageable environment variables
 * Less control over application scaling and capacity.
@@ -36,7 +38,7 @@ _Disclaimer_: We'll do some fast-forwarding in practice, because Elastic Beansta
 	* [Multi-container app with `Dockerrun.aws.json`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html)
 
 
-We can deploy using a `Dockerrun.aws.json` file. For private repositories, we'll need to setup credentials using an S3 bucket, [check documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-images-private).
+_Multicontainer apps_: We can deploy using a `Dockerrun.aws.json` file. For private repositories, we'll need to setup credentials using an S3 bucket, [check documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-images-private).
 
 To go faster, we'll use a public repository.
 

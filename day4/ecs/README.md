@@ -85,7 +85,6 @@ A _Task_ is the instantiation of a _Task Definition_ within a cluster. There are
 Tasks are placed on a __Cluster__, which s a logical grouping of resources.
 
 ECS -> Cluster -> Create Cluster -> EC2 Linux + Networking
-
 	* About CloudFormation
 
 #### Services
