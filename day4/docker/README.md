@@ -27,8 +27,11 @@ sudo yum update -y
 sudo yum install docker
 sudo service docker start
 sudo usermod -a -G docker ec2-user // so you can execute commands without sudo
+// RECONNECT
 docker info // verify
 ```
+
+To install docker-compose, read [latest-docs](https://docs.docker.com/compose/install/)
 
 ## No need for lots of changes...
 
